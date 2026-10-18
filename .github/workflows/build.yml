@@ -19,7 +19,7 @@ jobs:
         run: |
           go install github.com/fyne-io/fyne-cross@latest
           export PATH=$PATH:~/go/bin
-          fyne-cross android --app-id com.yt.gonative --app-name "YT Go Native" --icon icon.png --release
+          fyne-cross android --app-id com.yt.gonative --name "YT Go Native" --icon icon.png --release
           mv fyne-cross/dist/android/*.apk ./YT-Go-Native.apk
 
       - name: Upload APK
